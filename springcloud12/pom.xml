@@ -2,10 +2,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.yhz.sprboot</groupId>
-	<artifactId>springcloud04</artifactId>
+	<artifactId>springcloud12</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springcloud04 Maven Webapp</name>
+	<name>springcloud12 Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 
 
@@ -33,21 +33,12 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-config</artifactId>
+			<artifactId>spring-cloud-starter-zuul</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>
-		<!-- config 结合rmq -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
 		</dependency>
 	</dependencies>
 
@@ -64,7 +55,7 @@
 	</dependencyManagement>
 
 	<build>
-		<finalName>springcloud04</finalName>
+		<finalName>springcloud12</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -83,6 +74,4 @@
 			</snapshots>
 		</repository>
 	</repositories>
-
-
 </project>
